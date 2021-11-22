@@ -1,0 +1,85 @@
+//學號:3B052046
+//姓名:成采綸
+//蒙德里安
+
+function setup() {
+  createCanvas(400, 400);
+  strokeWeight(4)
+
+}
+
+function draw() {
+  background(256);
+  fill(0,0,256)
+  rect(1,1,159,99)
+  
+  //blue1
+  fill(0,0,256)
+  rect(1,1,159,99)
+  //yellow1
+  fill(256,256,0)
+  rect(0,99,70,89)
+  //white1
+  fill(256,256,256)
+  rect(70,99,50,89)
+  //red1
+  fill(256,0,0)
+  rect(120,99,140,89)
+  //white2
+   fill(256,256,256)
+  rect(160,0,140,60)
+  //black1
+   fill(0,0,0)
+  rect(160,60,140,38)
+  //black2
+   fill(0,0,0)
+  rect(263,100,135,88)
+  //blue2
+   fill(0,0,256)
+  rect(278,188,120,100)
+  //yellow2
+  fill(256,256,0)
+  rect(300,0,60,99)
+  //white3
+  fill(256,256,256)
+  rect(360,0,40,99)
+  //white4
+  fill(256,256,256)
+  rect(0,188,120,50)
+  //white5
+  fill(256,256,256)
+  rect(120,188,157,50)
+  //yellow3
+  fill(256,256,0)
+  rect(0,238,250,50)
+  //white6
+   fill(256,256,256)
+  rect(250,238,28,50)
+  //red2
+  fill(256,0,0)
+  rect(0,288,60,70)
+  //white7
+  fill(256,256,256)
+  rect(0,358,30,40)
+  //white8
+   fill(256,256,256)
+  rect(30,358,30,40)
+  //black3
+   fill(0,0,0)
+  rect(60,288,70,110)
+  //red3
+   fill(256,0,0)
+  rect(265,288,133,110)
+  //white9
+   fill(256,256,256)
+  rect(130,288,35,60)
+  //white10
+  fill(256,256,256)
+  rect(130,288,35,70)
+  //blue3
+  fill(0,0,256)
+  rect(165,288,99,70)
+  //white11
+   fill(256,256,256)
+  rect(130,358,135,40)
+}
