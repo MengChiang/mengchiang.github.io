@@ -25,10 +25,11 @@
     }).fail(function () {
         console.log("An error has occurred.");
     });
+    
+    changeContent();
 
     const myTimeout = setInterval(changeContent, 10000);
 
-    changeContent();
 
     function changeContent() {
 
