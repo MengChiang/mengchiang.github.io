@@ -27,11 +27,7 @@
         console.log("An error has occurred.");
     });
 
-
-
-
     function changeContent() {
-
         if (courseData && iter == courseData.length - 1)
             iter = 0;
         else
@@ -49,8 +45,8 @@
             $('#gistLink').attr('src', "");
             $('#gistLink').attr('src', `${link}`);
             $('#iframePath').attr('src', `${window.location.protocol}/CreativeCodeDemo/${number}/index.html`);
-            $('#name').text(` 作者：${name}`);
-            $('#projectName').text(` 作品名稱：${projectName}`);
+            $('#name').text(`作者：${name}`);
+            $('#projectName').text(`作品名稱：${projectName}`);
         }
     }
 </script>
@@ -59,7 +55,7 @@
     <div class="Body">
         <div class="Top"></div>
         <div class="Left">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -99,7 +95,7 @@
         <div class="Right">
             <iframe id="iframePath" src="" frameborder="0" style="width: 100%;height: 100vh;"></iframe>
         </div>
-        <div class="Bottom">Copyright © 2022 Creative Coding. All rights reserved.</div>
+        <div class="Bottom">Copyright © 2022 互動藝術程式設計 Creative Coding. All rights reserved.</div>
     </div>
 </body>
 
