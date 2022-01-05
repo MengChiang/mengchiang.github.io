@@ -18,17 +18,16 @@
 
 <script>
     let courseData;
-    let iter = 0;
+    let iter = -1;
     $.getJSON("data.json", function (data) {
         courseData = data;
-        //console.log(courseData);
+        changeContent();
+        const myTimeout = setInterval(changeContent, 10000);
     }).fail(function () {
         console.log("An error has occurred.");
     });
 
-    changeContent();
 
-    const myTimeout = setInterval(changeContent, 10000);
 
 
     function changeContent() {
@@ -50,7 +49,6 @@
             $('#gistLink').attr('src', "");
             $('#gistLink').attr('src', `${link}`);
             $('#iframePath').attr('src', `${window.location.protocol}/CreativeCodeDemo/${number}/index.html`);
-
             $('#name').text(` 作者：${name}`);
             $('#projectName').text(` 作品名稱：${projectName}`);
         }
@@ -72,13 +70,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img id="img1" src="3B052002/Slide3.JPG" class="d-block w-100" alt="..." class="Pic">
+                        <img id="img1" src="" class="d-block w-100" alt="..." class="Pic">
                     </div>
                     <div class="carousel-item">
-                        <img id="img2" src="3B052002/Slide4.JPG" class="d-block w-100" alt="..." class="Pic">
+                        <img id="img2" src="" class="d-block w-100" alt="..." class="Pic">
                     </div>
                     <div class="carousel-item">
-                        <img id="img3" src="3B052002/Slide5.JPG" class="d-block w-100" alt="..." class="Pic">
+                        <img id="img3" src="" class="d-block w-100" alt="..." class="Pic">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -99,8 +97,7 @@
             </div>
         </div>
         <div class="Right">
-            <iframe id="iframePath" src="" frameborder="0"
-                style="width: 100%;height: 100vh;"></iframe>
+            <iframe id="iframePath" src="" frameborder="0" style="width: 100%;height: 100vh;"></iframe>
         </div>
         <div class="Bottom">Copyright © 2022 Creative Coding. All rights reserved.</div>
     </div>
