@@ -45,6 +45,7 @@
             $('#gistLink').attr('src', "");
             $('#gistLink').attr('src', `${link}`);
             $('#iframePath').attr('src', `${window.location.protocol}/CreativeCodeDemo/${number}/index.html`);
+            $('#number').text(`學號：${number}`);
             $('#name').text(`作者：${name}`);
             $('#projectName').text(`作品名稱：${projectName}`);
         }
@@ -87,6 +88,7 @@
                 </button>
             </div>
             <div class="authorInfo">
+                <p id="number"></p>
                 <p id="name"></p>
                 <p id="projectName"></p>
                 <script id="gistLink" src=""></script>
